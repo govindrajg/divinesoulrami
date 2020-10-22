@@ -65,7 +65,7 @@
 
                                         <li><a href="#">Pages<i class="ti-angle-down"></i></a>
                                             <ul class="submenu">                                                
-                                                <li><a href="#">Non-Profit Organization<i class="ti-angle-down"></i></a>
+                                                <li><a href="#">Non-Profit<i class="ti-angle-down"></i></a>
                                                     <ul class="deepmenu">
                                                         <li><a href="blog.html">blog</a></li>
                                                         <li><a href="single-blog.html">single-blog</a></li>
