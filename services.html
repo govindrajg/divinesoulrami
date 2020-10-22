@@ -74,100 +74,109 @@
 
     <!-- breadcam_area_start -->
     <div class="breadcam_area bradcam_bg">
-        <div class="container">
+        <div class="container"> 
             <div class="row">
-                <div class="col-xl-12">
+                <div class="col-lg-12">
                     <div class="breadcam_text">
-                        <h3>Community Services</h3>
+                        <h3>Make an appointment</h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- breadcam_area_end -->
-    
-    <div class="about_page">
-        <div class="container">          
-          <div class="row">
-            <div class="col-xl-6 col-md-6">
-                <div class="about_image">
-                    <img src="img/gallery/8.JPG" alt="">
+
+    <!-- ================ contact section start ================= -->
+    <section class="contact-section">
+        <div class="container">             
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="contact-title"></h2>
                 </div>
-            </div>
-            <div class="col-xl-6 col-md-6">
-                <div class="about_info">
-                    <h3>Divine Service</h3>
-                </div>
-            </div>
-        </div>      
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="single_slider">
-                    <div class="slider_text">
-                        <h3>
-                        <p>In spite of Rami's very busy spiritual life and work schedule, she has managed to find the time to be involved not only in the spiritual world, but also volunteer in the community as well. She is one of those volunteers that selflessly gives to help the less fortunate. One thing for sure is that she truly enjoys volunteering at the homeless Mission in Long Beach. Most recently, on August 22, 2020, she volunteered with the United Sikhs organization in Buena Park; Rami helped them pack lunches at the Gurdwara, then drove to skid row in Los Angeles, and distributed a lunch package to the homeless people. Unfortunately, there is a huge homeless population in that area. She gladly excepts any of the many jobs necessary to feed on average over 300 to 400 people a day. She always respects the homeless as individuals, responds with kindness, and genuinely emphasizes with their misfortune. Nothing but words of encouragement and kindness are spoken by her. Rami is without a doubt one of those rare individual who is humble and stands above the crowd.</p>                            
-                        </h3>
-                    </div>
-                </div>
+                <div class="col-lg-8">
+                    <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <h2></h2><label>Meeting Request:</label></h2>
+                                    <select class="form-control" id="meeting_req" name="meeting_req">
+                                        <option>Spiritual Lecture/Katha</option>
+                                        <option>Spiritual Counseling</option>
+                                        <option>Special Service for Ritual or Event</option>
+                                        <option>Spiritual Re-habilitation</option>
+                                        <option>Spiritually Healing Body and Mind</option>
+                                    </select>
+                                </div>
+                            </div>
+                        
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label>Meeting Type:</label>
+                                    <select class="form-control" id="meeting_type" name="meeting_type">
+                                        <option>Zoom</option>
+                                        <option>Skype</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="form-group">
+                                    <label>Full name:</label>
+                                    <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your full name here.">
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-2">
+                                <div class="form-group">
+                                    <label>Gender:</label>
+                                    <select class="form-control" id="gender" name="gender">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Date:</label>
+                                    <input class="form-control valid" name="date" id="date" type="date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter date.">
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label>Time:</label>
+                                    <input class="form-control valid" name="time" id="time" type="time" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter date.">
+                                </div>
+                            </div>
+                                                
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Phone No.:</label>
+                                    <input class="form-control valid" name="phone" id="phone" type="tel"  placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" >
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label>Email:</label>
+                                    <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label>Message:</label>
+                                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder="Enter Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <button type="submit" class="button button-contactForm boxed-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>                
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-xl-6 ">
-            <div class="causes_thumb">
-                <img class="card-img rounded-0" src="img/gallery/1.JPG" alt="">
-            </div>
-        </div>
-        <div class="col-xl-6 col-md-6">
-            <div class="causes_thumb">
-                <img class="img-fluid" src="img/gallery/2.JPG" alt="">
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-xl-6 ">
-            <div class="causes_thumb">
-                <img class="card-img rounded-0" src="img/gallery/3.JPG" alt="">
-            </div>
-        </div>
-        <div class="col-xl-6 col-md-6">
-            <div class="causes_thumb">
-                <img class="img-fluid" src="img/gallery/4.JPG" alt="">
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-xl-6 ">
-            <div class="causes_thumb">
-                <img class="card-img rounded-0" src="img/gallery/5.JPG" alt="">
-            </div>
-        </div>
-        <div class="col-xl-6 col-md-6">
-            <div class="causes_thumb">
-                <img class="img-fluid" src="img/gallery/6.JPG" alt="">
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-xl-6 ">
-            <div class="causes_thumb">
-                <img class="card-img rounded-0" src="img/gallery/7.JPG" alt="">
-            </div>
-        </div>
-        <div class="col-xl-6 col-md-6">
-            <div class="causes_thumb">
-                <img class="img-fluid" src="img/gallery/8.JPG" alt="">
-                
-            </div>
-        </div>
-    </div>
-
     <!-- volunteers_area_end -->
 
     <!-- footer_start -->
@@ -190,9 +199,14 @@
                             <h3 class="footer_title">
                                 address
                             </h3>
-                            <p class="footer_text">200, A-block, Green road, USA <br>
-                                +10 367 267 2678 <br>
-                                <a class="domain" href="#">contact@nonprofit.com</a></p>
+                            <p class="footer_text">
+                                412 Olive Avenue #215.<br/>
+                                Huntington Beach, CA 92648,<br/>
+                                USA<br><br/>
+                                Tel:+1-714-336-5080<br/>
+                                Fax:714-960-9870<br/><br/>
+                                <a class="domain" href="#"> Email: Gururamiray44@gmail.com<br/>
+                                    rami@divinesoulrami.com</a></p>
                             <div class="socail_links">
                                 <ul>
                                     <li>
@@ -220,10 +234,9 @@
                                 Navigation
                             </h3>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Rooms</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">News</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -257,7 +270,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             </div>
         </div>
     </footer>
-    <!-- footer_start -->
+    <!-- footer_end -->
+
 
     <!-- JS here -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
